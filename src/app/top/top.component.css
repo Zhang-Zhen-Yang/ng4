@@ -3,3 +3,29 @@
     height:50px;
     background-color:#efefef;
 }
+#app-top .title{
+    line-height: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#app-top .container{
+    width:1200px;
+    height:100%;
+    margin:0 auto;
+}
+.text-large{
+    font-size: 30px;
+}
+.nav{
+    display: inline-block;
+    line-height: 40px;
+    margin:0 20px;
+    cursor:pointer;
+    font-size:16px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+}
+.nav:hover,.nav.active{
+    color:red;
+    border-bottom-color: red;
+}

@@ -1,6 +1,12 @@
 <div id="app-top">
-  top works!
-  {{ bind }}
-  <input type="text"[(ngModel)]="bind">
-  <button (click)="topEmit()">emit</button>
+  <div class="container">
+    <span class="text-large title">
+      Angular  
+    </span>  
+    <span *ngFor="let link of link;let i = index;" class="nav" [class.active]="i==linkIndex" (click)="setLinkActive(i)">{{ link }}</span>
+    top works!
+    {{ bind }}
+    <input type="text"[(ngModel)]="bind">
+    <button (click)="topEmit()">emit</button>
+  </div>
 </div>
