@@ -9,14 +9,18 @@ import { AppComponent } from './app.component';
 import { Mycolor } from '../pipe/color';
 import { TopComponent } from './top/top.component'
 import { HightLightDirective } from './hight-light.directive'
-import { UserService } from './user.service'
+import { UserService } from './user.service';
+import { FlyHeroPipe } from './fly-hero.pipe';
+import { HeroSyncComponent } from './hero-sync/hero-sync.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     Mycolor,
     TopComponent,
-    HightLightDirective
+    HightLightDirective,
+    FlyHeroPipe,
+    HeroSyncComponent
   ],
   imports: [
     BrowserModule,

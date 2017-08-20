@@ -1,5 +1,6 @@
-import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input, Host, forwardRef, Inject } from '@angular/core';
 import { UserService } from '../user.service'
+import { AppComponent } from '../app.component'
 
 @Component({
   selector: 'app-top',
@@ -12,8 +13,8 @@ export class TopComponent implements OnInit {
   bind:string = 'app'
   link:string[] = ['首页','组件','依赖注入','路由','RxJs',]
   linkIndex:number = 0
-  constructor(public user:UserService) {
-
+  constructor(public user:UserService,@Host() @Inject(forwardRef(()=> AppComponent)) app:AppComponent) {
+    app.title = 'orange';
    }
 
   ngOnInit() {
