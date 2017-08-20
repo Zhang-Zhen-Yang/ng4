@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { UserService } from './user.service'
+import  { HttpClient } from '@angular/common/http'
 
 import {
   trigger,
@@ -27,16 +29,27 @@ import {
     ])
   ]
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'app';
   myState = 'inactive'
   src ='http://img.dongman.fm/subject/4598b34167e500f140f2002bb126af24.jpeg';
   language:string[] = ['java','php','python','go','c','kotlin'];
+  constructor(public user:UserService,public http: HttpClient){
+
+  }
   changeState(){
     //alert('ddddd');
     this.myState = this.myState=='active'?'inactive':'active';
   }
   fromTop(data){
     alert(data)
+  }
+
+  //
+  ngOnInit():void{
+    alert('init');
+    this.http.get('http://192.168.1.104:3000/api/items').subscribe(data=>{
+      alert(JSON.stringify(data));
+    })
   }
 }

@@ -8,5 +8,6 @@
     {{ bind }}
     <input type="text"[(ngModel)]="bind">
     <button (click)="topEmit()">emit</button>
+    <a md-raised-button (click)="setName()">{{ user.name }}{{ user.value }}</a>
   </div>
 </div>
