@@ -1,6 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-top (myEvent)="fromTop($event,value)"></app-top>
 <div style="text-align:center">
+    <router-outlet></router-outlet>
   <h1>{{ user.name }}</h1>
   <h1 appHightLight>
     Welcome to {{title|mycolor}}!

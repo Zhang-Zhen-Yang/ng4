@@ -2,12 +2,13 @@
   <div class="container">
     <span class="text-large title">
       Angular  
-    </span>  
-    <span *ngFor="let link of link;let i = index;" class="nav" [class.active]="i==linkIndex" (click)="setLinkActive(i)">{{ link }}</span>
-    top works!
-    {{ bind }}
-    <input type="text"[(ngModel)]="bind">
-    <button (click)="topEmit()">emit</button>
-    <a md-raised-button (click)="setName()">{{ user.name }}{{ user.value }}</a>
+    </span>
+    <a routerLink="/index" routerLinkActive="active">首页</a>
+    <a routerLink="/component" routerLinkActive="active">组件</a>
+    <a routerLink="/directive" routerLinkActive="active">指令</a>
+    <a routerLink="/pipe" routerLinkActive="active">管道</a>
+    <a routerLink="/di" routerLinkActive="active">依赖注入</a>
+    <a routerLink="/animation" routerLinkActive="active">动画</a>
+    <a routerLink="/rx" routerLinkActive="active">RX</a>
   </div>
 </div>

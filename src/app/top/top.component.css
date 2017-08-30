@@ -17,16 +17,16 @@
 .text-large{
     font-size: 30px;
 }
-.nav{
+#app-top a{
     display: inline-block;
-    line-height: 40px;
-    margin:0 20px;
-    cursor:pointer;
+    color:#aaa;
     font-size:16px;
-    border-top:0px solid transparent;
+    text-decoration: none;
     border-bottom:3px solid transparent;
+    padding:0 10px;
+    line-height:40px;
 }
-.nav:hover,.nav.active{
+#app-top a.active{
     color:red;
-    border-bottom-color: red;
+    border-bottom:3px solid red;
 }
