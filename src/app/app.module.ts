@@ -20,7 +20,9 @@ import { RXComponent } from './rx/rx.component';
 import { AnimationComponent } from './animation/animation.component';
 import { ComponentComponent } from './component/component.component';
 import { DirectiveComponent } from './directive/directive.component';
-import { PipeComponent } from './pipe/pipe.component'
+import { PipeComponent } from './pipe/pipe.component';
+import { ModuleComponent } from './module/module.component';
+import { HttpComponent } from './http/http.component'
 const AppRoutes:Routes = [
   {
     path:'index',
@@ -49,6 +51,14 @@ const AppRoutes:Routes = [
   {
     path:'animation',
     component:AnimationComponent
+  },
+  {
+    path:'module',
+    component:ModuleComponent
+  },
+  {
+    path:'http',
+    component:HttpComponent
   }
 ]
 
@@ -66,7 +76,9 @@ const AppRoutes:Routes = [
     AnimationComponent,
     ComponentComponent,
     DirectiveComponent,
-    PipeComponent
+    PipeComponent,
+    ModuleComponent,
+    HttpComponent
   ],
   imports: [
     BrowserModule,
