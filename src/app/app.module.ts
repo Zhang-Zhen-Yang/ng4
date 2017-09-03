@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { FormsModule  } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http' 
-import { MdButtonModule, MdCheckboxModule } from '@angular/material'
+import { MdButtonModule, MdCheckboxModule,MdDatepickerModule } from '@angular/material'
 
 import { AppComponent } from './app.component';
 import { Mycolor } from '../pipe/color';
@@ -23,6 +23,7 @@ import { DirectiveComponent } from './directive/directive.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { ModuleComponent } from './module/module.component';
 import { HttpComponent } from './http/http.component'
+
 const AppRoutes:Routes = [
   {
     path:'index',
@@ -90,6 +91,7 @@ const AppRoutes:Routes = [
     HttpClientModule,
     MdButtonModule,
     MdCheckboxModule,
+    MdDatepickerModule
     
     
   ],
