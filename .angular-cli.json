@@ -19,6 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "./app/indigo-pink.css",
         "styles.css"
       ],
       "scripts": [],

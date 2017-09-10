@@ -1,10 +1,16 @@
 <div>
   <h1 class="title">Animation</h1>
-  <img src="assets/angular.png" alt="">
-  <div style="font-size:100px;-webkit-font-smoothing: antialiased;"> 
-    ABC
+  <img src="assets/angular.png" alt="" [@ani]="anistate">
+  <div style="font-size:100px;-webkit-font-smoothing: antialiased;" (click)="setAnistate()"> 
+    {{ anistate }}
   </div>
-  <div style="font-size:100px;-webkit-font-smoothing: none;"> 
-    ABC
+  <img src="assets/angular.png" alt="" [@useStyleInAnime]="useStyleInAnimeState">
+  <div style="font-size:100px;-webkit-font-smoothing: none;" (click)="toggleUseStyleInAnimeState()"> 
+    {{ useStyleInAnimeState }}
+  </div>
+
+  <img src="assets/angular.png" alt="" [@voidAni]="voidAniState" *ngIf="threeShow">
+  <div style="font-size:100px;-webkit-font-smoothing: none;" (click)="toggleVoidAniState()"> 
+    {{ voidAniState }}
   </div>
 </div>

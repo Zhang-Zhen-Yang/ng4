@@ -14,6 +14,7 @@ import { FlyHeroPipe } from './fly-hero.pipe';
 import { HeroSyncComponent } from './hero-sync/hero-sync.component'
 
 import { RouterModule, Routes } from '@angular/router'
+
 import {IndexComponent} from './index/Index.component';
 import { DIComponent } from './di/di.component';
 import { RXComponent } from './rx/rx.component';

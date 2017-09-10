@@ -55,16 +55,15 @@ export class AppComponent implements OnInit,AfterViewInit{
   ngOnInit():void{
     //alert('init');
     this.http.get('http://192.168.1.104:3000/api/items').subscribe(data=>{
-      //alert(JSON.stringify(data));
+      alert(JSON.stringify(data));
     })
   }
   
   @ViewChild(HeroSyncComponent) appHeroSync:HeroSyncComponent;
   ngAfterViewInit(){
-    setTimeout(()=>{
+    /*setTimeout(()=>{
       this.appHeroSync.apple = '天道花怜（CV.金元寿子）、星之守千秋（CV.石见舞菜香）、亚玖璃（CV.大久保瑠美）'; 
-    },1000)
-   
+    },1000)  */
     
   }
   lalaKeys():string[]{
