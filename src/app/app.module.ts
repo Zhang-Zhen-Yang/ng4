@@ -61,6 +61,10 @@ const AppRoutes:Routes = [
   {
     path:'http',
     component:HttpComponent
+  },
+  {
+    path:'lazyLoader',
+    loadChildren:'app/modules/lazy-loader/lazy-loader.module#LazyLoaderModule'
   }
 ]
 
