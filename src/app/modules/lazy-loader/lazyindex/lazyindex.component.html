@@ -1,4 +1,7 @@
 <p>
   lazyindex works!
-  
+  <img [src]="imgUrl[0]" alt="">
+  <img src="{{ imgUrl[1] }}" alt="">
+  <input #inputV (input)="0">{{ inputV.value }}
+  <img [src]="computedImg(0)" (click)="setNext()" alt="">
 </p>
