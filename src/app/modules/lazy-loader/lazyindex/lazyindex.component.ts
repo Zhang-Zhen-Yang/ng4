@@ -16,19 +16,39 @@ export class LazyindexComponent implements OnInit {
     'http://imgs.aixifan.com/live/1505618864365/1505618864365.jpg',
     'http://imgs.aixifan.com/live/1505618865382/1505618865382.jpg',
     'http://imgs.aixifan.com/live/1505618866934/1505618866934.jpg',
-    'http://imgs.aixifan.com/live/1505618887824/1505618887824.jpg'
+    'http://imgs.aixifan.com/live/1505618887824/1505618887824.jpg',
+    'http://imgs.aixifan.com/live/1505551482146/1505551482146.jpg'
   ]
-  imgIndex = 0
+  imgMap:object={
+    one:'初音',
+    tow:'心春',
+    three:'久美子'
+  }
+  myUrl={
+    a:{
+      b:{
+        c:'hhhhhh'
+      }
+    }
+  }
+  myUrlLink(){
+    return this.myUrl.a.b.c;
+  }
+  imgMapKeys():Array<string>{
+    return Object.keys(this.imgMap||{});
+  }
+  imgIndex:number = 0
   constructor() { }
 
   ngOnInit() {
 
   }
-  computedImg(){
+  computedImg():string{
     return this.imgUrl[this.imgIndex];
   }
-  setNext(){
+  setNext():void{
     this.imgIndex = (this.imgIndex + 1)%this.imgUrl.length;
+    this.imgMap ={...this.imgMap,four:'蕾姆'};
   }
 
 }

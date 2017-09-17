@@ -4,4 +4,12 @@
   <img src="{{ imgUrl[1] }}" alt="">
   <input #inputV (input)="0">{{ inputV.value }}
   <img [src]="computedImg(0)" (click)="setNext()" alt="">
+  
+  <!--<ul>
+    <li *ngFor="let item of imgUrl">{{ item }}</li>
+  </ul>-->
 </p>
+<ul>
+  <li *ngFor="let item of imgMapKeys()">{{ imgMap[item] }}</li>
+</ul>
+{{ myUrlLink() }}
