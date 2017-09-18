@@ -23,7 +23,10 @@ import { ComponentComponent } from './component/component.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { ModuleComponent } from './module/module.component';
-import { HttpComponent } from './http/http.component'
+import { HttpComponent } from './http/http.component';
+import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
+import { InteractionOneComponent } from './component-interaction/interaction-one/interaction-one.component';
+import { InteractionTwoComponent } from './component-interaction/interaction-two/interaction-two.component'
 
 const AppRoutes:Routes = [
   {
@@ -65,6 +68,10 @@ const AppRoutes:Routes = [
   {
     path:'lazyLoader',
     loadChildren:'app/modules/lazy-loader/lazy-loader.module#LazyLoaderModule'
+  },
+  {
+    path:'interaction',
+    component:ComponentInteractionComponent
   }
 ]
 
@@ -84,7 +91,10 @@ const AppRoutes:Routes = [
     DirectiveComponent,
     PipeComponent,
     ModuleComponent,
-    HttpComponent
+    HttpComponent,
+    ComponentInteractionComponent,
+    InteractionOneComponent,
+    InteractionTwoComponent
   ],
   imports: [
     BrowserModule,

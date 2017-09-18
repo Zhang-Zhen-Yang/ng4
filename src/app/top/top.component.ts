@@ -18,7 +18,7 @@ export class TopComponent implements OnInit {
   constructor(public user:UserService,@Host() @Inject(forwardRef(()=> AppComponent)) app:AppComponent) {
     app.title = 'orange';
    }
-
+   
   ngOnInit() {
   }
   topEmit(){
