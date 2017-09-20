@@ -26,7 +26,9 @@ import { ModuleComponent } from './module/module.component';
 import { HttpComponent } from './http/http.component';
 import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 import { InteractionOneComponent } from './component-interaction/interaction-one/interaction-one.component';
-import { InteractionTwoComponent } from './component-interaction/interaction-two/interaction-two.component'
+import { InteractionTwoComponent } from './component-interaction/interaction-two/interaction-two.component';
+import { YellowDirective } from './directive/yellow.directive';
+import { MyunlessDirective } from './directive/myunless.directive'
 
 const AppRoutes:Routes = [
   {
@@ -94,7 +96,9 @@ const AppRoutes:Routes = [
     HttpComponent,
     ComponentInteractionComponent,
     InteractionOneComponent,
-    InteractionTwoComponent
+    InteractionTwoComponent,
+    YellowDirective,
+    MyunlessDirective
   ],
   imports: [
     BrowserModule,

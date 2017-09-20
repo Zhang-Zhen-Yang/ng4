@@ -10,6 +10,7 @@ export class DirectiveComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
