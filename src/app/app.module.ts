@@ -28,7 +28,9 @@ import { ComponentInteractionComponent } from './component-interaction/component
 import { InteractionOneComponent } from './component-interaction/interaction-one/interaction-one.component';
 import { InteractionTwoComponent } from './component-interaction/interaction-two/interaction-two.component';
 import { YellowDirective } from './directive/yellow.directive';
-import { MyunlessDirective } from './directive/myunless.directive'
+import { MyunlessDirective } from './directive/myunless.directive';
+import { DymanicWidgetComponent } from './dymanic-widget/dymanic-widget.component';
+import { AdHostDirective } from './component-interaction/ad-host.directive'
 
 const AppRoutes:Routes = [
   {
@@ -98,7 +100,9 @@ const AppRoutes:Routes = [
     InteractionOneComponent,
     InteractionTwoComponent,
     YellowDirective,
-    MyunlessDirective
+    MyunlessDirective,
+    DymanicWidgetComponent,
+    AdHostDirective
   ],
   imports: [
     BrowserModule,
@@ -110,9 +114,10 @@ const AppRoutes:Routes = [
     HttpClientModule,
     MdButtonModule,
     MdCheckboxModule,
-    MdDatepickerModule
-    
-    
+    MdDatepickerModule    
+  ],
+  entryComponents:[
+    DymanicWidgetComponent
   ],
   providers: [
     UserService
