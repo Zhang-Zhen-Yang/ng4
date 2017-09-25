@@ -30,7 +30,8 @@ import { InteractionTwoComponent } from './component-interaction/interaction-two
 import { YellowDirective } from './directive/yellow.directive';
 import { MyunlessDirective } from './directive/myunless.directive';
 import { DymanicWidgetComponent } from './dymanic-widget/dymanic-widget.component';
-import { AdHostDirective } from './component-interaction/ad-host.directive'
+import { AdHostDirective } from './component-interaction/ad-host.directive';
+import { MyPipePipe } from './pipe/my-pipe.pipe'
 
 const AppRoutes:Routes = [
   {
@@ -102,7 +103,8 @@ const AppRoutes:Routes = [
     YellowDirective,
     MyunlessDirective,
     DymanicWidgetComponent,
-    AdHostDirective
+    AdHostDirective,
+    MyPipePipe
   ],
   imports: [
     BrowserModule,

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pipe.component.css']
 })
 export class PipeComponent implements OnInit {
-
+  name='pinpTest'
   constructor() { }
 
   ngOnInit() {
